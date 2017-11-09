@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <script>
+    /* 高清方案设置代码，详情见 https://github.com/ant-design/ant-design-mobile/wiki/antd-mobile-0.8-%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%E3%80%8C%E9%AB%98%E6%B8%85%E3%80%8D%E6%96%B9%E6%A1%88%E8%AE%BE%E7%BD%AE */
+    !function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);
+    flex(100, 1);
+    if(!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+  </script>
+  <!--在电脑上调试的适合先注释掉下面js,上线的时候再加上-->
+  <!--<script src="./src/utils/cordova.js"></script>-->
+  <!--<script type="text/javascript" >-->
+  <!--if (u.indexOf('Android') > -1 || u.indexOf('Adr') > -1) {-->
+    <!--document.addEventListener("deviceready", onDeviceReady, false);-->
+    <!--function onDeviceReady() {-->
+      <!--document.addEventListener("backbutton", onBackKeyDown, false);-->
+      <!--window.addEventListener("native.keyboardshow", keyboardShowHandler);-->
+      <!--window.addEventListener("native.keyboardhide", keyboardHideHandler);-->
+
+    <!--}-->
+    <!--function keyboardShowHandler(e){-->
+
+    <!--}-->
+
+    <!--function keyboardHideHandler(e){-->
+      <!--document.body.style.marginTop = 0;-->
+    <!--}-->
+
+    <!--function onBackKeyDown() {-->
+      <!--showToast('再点击一次退出!');-->
+      <!--document.removeEventListener("backbutton", onBackKeyDown, false); // 注销返回键-->
+      <!--document.addEventListener("backbutton", exitApp, false);//绑定退出事件-->
+      <!--// 3秒后重新注册-->
+      <!--var intervalID = window.setInterval(function() {-->
+      <!--window.clearInterval(intervalID);-->
+      <!--document.removeEventListener("backbutton", exitApp, false); // 注销返回键-->
+      <!--document.addEventListener("backbutton", onBackKeyDown, false); // 返回键-->
+      <!--}, 3000);-->
+    <!--}-->
+    <!--function exitApp(){-->
+      <!--navigator.app.exitApp();-->
+    <!--}-->
+
+    <!--function showToast(msg, duration) {-->
+        <!--duration = isNaN(duration) ? 2000 : duration;-->
+        <!--var m = document.createElement('div');-->
+        <!--m.innerHTML = msg;-->
+        <!--m.style.cssText = "width:60%; min-width:1.5rem;background:#000; opacity:0.5; height:0.8rem; color:#fff; line-height:0.8rem; text-align:center; border-radius:5px; position:fixed; top:70%; left:20%; z-index:9999999999; font-weight:bold;";-->
+        <!--document.body.appendChild(m);-->
+        <!--setTimeout(function() {-->
+            <!--var d = 0.5;-->
+            <!--m.style.webkitTransition = '-webkit-transform ' + d-->
+                    <!--+ 's ease-in, opacity ' + d + 's ease-in';-->
+            <!--m.style.opacity = '0';-->
+            <!--setTimeout(function() {-->
+                <!--document.body.removeChild(m)-->
+            <!--}, d * 1000);-->
+        <!--}, duration);-->
+    <!--}-->
+  <!--}-->
+  <!--</script>-->
+
+  <title>分销 APP</title>
+</head>
+<body>
+
+<div id="root"></div>
+</body>
+</html>

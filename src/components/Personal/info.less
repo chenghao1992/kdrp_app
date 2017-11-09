@@ -1,0 +1,139 @@
+
+
+.personalInfo{
+	background-color: #fff;
+	p{ margin: 0; color: #4c4c4e; }
+	.user_info{
+		text-align: center;
+		padding: 0.5rem 0;
+		img{
+			width: 2rem;
+			height: 2rem;
+			border-radius: 0.1rem;
+		}
+		p{ 
+			margin-top: 0.1rem;
+		}
+	}
+	.title{
+		height: 0.5rem;
+		background-color: #f2f2f2;
+		padding: 0.4rem 0.3rem 0;
+	}
+	.basic_info{
+		a{
+			display: inline-block;
+			width: 100%;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			color: #bbb;
+			background-color: #f9f9f9;
+			text-align: center;
+		}
+	}
+	table{
+		padding: 0.3rem 0.3rem;
+		width: 100%;
+		tr{
+			height: 0.7rem;
+			td{
+				width: 40%;
+				color: #4c4c4e;
+				&:last-child{
+					width: 60%;
+				}
+			}
+		}
+	}
+	.account_connect{
+		.account_list{
+			padding: 0.3rem;
+			overflow-y: hidden;
+			border: 1px solid #ebebeb;
+			.al_left{
+				float: left;
+				p:first-child{
+					color: #ee7700;
+					margin-bottom: 0.1rem;
+					span{
+						display: inline-block;
+						width: 0.15rem;
+						height: 0.15rem;
+						background-color: #ee7700;
+						border-radius: 50%;
+						margin:0 0.1rem 0.05rem 0;
+
+					}
+					&.has_connect{
+						color: green;
+						span{
+							background-color: green;
+						}
+					}
+				}
+				
+				p:last-child{
+					color: #a0a0a0;
+				}
+
+			}
+			.al_right{
+				float: right;
+				margin-top: 0.1rem;
+				:global .am-button{
+					background-color: #ee7700;
+					border: 1px solid #ee7700;
+					vertical-align: middle;
+				}
+				.refresh_icon{
+					vertical-align: middle;
+					display: inline-block;
+					width: 0.6rem;
+					height: 0.6rem;
+					line-height: 0.6rem;
+					border-radius: 0.1rem;
+					border: 1px solid #ee7700;
+					text-align: center;
+					margin-right: 0.2rem;
+					img{
+						margin-top: 0.05rem;
+						width: 0.5rem;
+						height: 0.5rem;
+
+					}
+
+				}
+				@-webkit-keyframes rotation{
+					from {-webkit-transform: rotate(0deg);}
+					to {-webkit-transform: rotate(360deg);}
+				}
+
+				.Rotation{
+					-webkit-transform: rotate(360deg);
+					animation: rotation 1s linear infinite;
+					-moz-animation: rotation 1s linear infinite;
+					-webkit-animation: rotation 1s linear infinite;
+					-o-animation: rotation 1s linear infinite;
+				}
+			}
+		}
+		.account_brief{
+			padding: 0.5rem 0.3rem;
+			line-height: 1.5;
+			p{
+				text-indent: 0.6rem;
+				&:first-child{
+					margin-bottom: 0.5rem;
+				}
+			}
+			a{
+				color: #0000ff;
+			}
+		}
+
+	}
+	.account_group{
+		padding-bottom: 1rem;
+	}
+
+}
